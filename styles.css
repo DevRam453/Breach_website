@@ -260,7 +260,16 @@ footer {
     }
 
     .hero h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         font-size: 2.5rem;
+        background-color: black;
+        padding: 1rem;
+        width: 80%; /* Adjust width as needed */
+        max-width: 300px; /* Adjust max-width as needed */
+        text-align: center;
     }
 
     .content {
@@ -298,27 +307,6 @@ footer {
         width: 100%;
         max-width: 100%;
         padding: 0 20px;
-    }
-
-    .about-content {
-        position: relative;
-        z-index: 2;
-        width: 100%;
-        max-width: 800px;
-        margin: 0 auto;
-    }
-    
-    .about-content p {
-        font-size: 1.2rem;
-        line-height: 1.6;
-        margin-bottom: 1rem;
-    }
-    
-    .about-content strong {
-        font-size: 1.4rem;
-        display: block;
-        margin-top: 2rem;
-        line-height: 1.4;
     }
 }
 
