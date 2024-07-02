@@ -281,18 +281,37 @@ footer {
 
     .content-item {
         margin-bottom: 1rem;
+        position: relative;
+    }
+
+    .content-item img {
+        width: 100%;
+        height: auto;
+        display: block;
     }
 
     .content-item h2,
     .content-item p {
-        position: static;
-        z-index: 2;
-        width: 100%;
-        left: 0;
-        transform: none;
-        text-align: center;
+        background-color: rgba(0, 0, 0, 0.8);
         padding: 1rem; /* Adjust padding as needed */
-        margin: 0 auto;
+        color: #fff;
+        width: 80%;
+        max-width: 300px;
+        box-sizing: border-box;
+        margin: 0 auto; /* Center align the text */
+        position: absolute; /* Position text over the image */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1; /* Ensure text is above the image */
+    }
+
+    .content-item h2 {
+        top: 20%; /* Adjust top positioning for h2 */
+    }
+
+    .content-item p {
+        bottom: 20%; /* Adjust bottom positioning for p */
     }
 
     .additional-image img {
