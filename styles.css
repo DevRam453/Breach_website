@@ -127,7 +127,7 @@ nav ul li.logo img {
 .content-item h2,
 .content-item p {
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 3rem; /* Adjust padding as needed */
+    padding: 100%; /* Adjust padding as needed */
     color: #fff;
     width: 80%;
     max-width: 300px;
