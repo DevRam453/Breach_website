@@ -129,7 +129,8 @@ nav ul li.logo img {
     background-color: rgba(0, 0, 0, 0.8);
     padding: 1rem 2rem; /* Adjust padding as needed */
     color: #fff;
-    width: 80%;
+    width: 100%;
+    height: 100%;
     max-width: 300px;
     box-sizing: border-box;
     margin: 0 auto; /* Center align the text */
@@ -141,7 +142,7 @@ nav ul li.logo img {
 }
 
 .content-item h2 {
-    top: 20%;
+    top: 30%;
 }
 
 .content-item p {
@@ -310,19 +311,19 @@ footer {
     }
 
     .text-overlay p {
-        margin-bottom: 0.5;
+        margin-bottom: 0;
     }
 
     .content-item:nth-child(1) .text-overlay {
-        margin-top: -40%; /* Adjust top positioning for the first content item */
+        margin-top: -60%; /* Adjust top positioning for the first content item */
     }
 
     .content-item:nth-child(2) .text-overlay {
-        margin-top: -40%; /* Adjust top positioning for the second content item */
+        margin-top: -60%; /* Adjust top positioning for the second content item */
     }
 
     .content-item:nth-child(3) .text-overlay {
-        margin-top: -40%; /* Adjust top positioning for the third content item */
+        margin-top: -60%; /* Adjust top positioning for the third content item */
     }
 
     .additional-image {
