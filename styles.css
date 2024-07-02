@@ -127,10 +127,9 @@ nav ul li.logo img {
 .content-item h2,
 .content-item p {
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 1rem 2rem; /* Adjust padding as needed */
+    padding: 1rem; /* Adjust padding as needed */
     color: #fff;
-    width: 100%;
-    height: 100%;
+    width: 80%;
     max-width: 300px;
     box-sizing: border-box;
     margin: 0 auto; /* Center align the text */
@@ -221,6 +220,7 @@ footer {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
+    text-align: left;
 }
 
 .about-content p {
