@@ -7,6 +7,7 @@
     <meta name="description" content="Contact Breach Performance Championship for inquiries and more.">
     <meta name="keywords" content="contact, Breach Performance, championship, fitness">
     <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script> <!-- Add a reference to the JavaScript file -->
     <style>
         .contact {
             background-image: url(Images/breach4.jpg); /* Replace with your background image path */
@@ -38,7 +39,12 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <div class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
                 <li class="logo"><a href="index.html"><img src="Images/logo/Breach Wording Large.jpg" alt="Breach Logo"></a></li>
                 <li><a href="index.html" aria-label="Home">Home</a></li>
                 <li><a href="about.html" aria-label="About">About</a></li>
