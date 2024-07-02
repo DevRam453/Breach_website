@@ -309,7 +309,8 @@ footer {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        z-index: 1; /* Adjust this margin for vertical positioning */
+        z-index: 1; /* Ensure text is above the image */
+        text-align: center; /* Center align text within the overlay */
     }
 
     .text-overlay h2 {
@@ -323,7 +324,9 @@ footer {
     .content-item:nth-child(1) .text-overlay,
     .content-item:nth-child(2) .text-overlay,
     .content-item:nth-child(3) .text-overlay {
-        margin-top: -60%; /* Adjust top positioning for the content items */
+        top: 50%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Center transform */
     }
 
     .additional-image {
