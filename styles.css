@@ -250,14 +250,42 @@ footer {
     text-align: left;
 }
 
+/* Media Query for Mobile Devices */
 @media only screen and (max-width: 768px) {
     /* Header */
-    nav ul {
-        top: 60px;
-    }
-
     .hamburger {
         display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 1rem;
+        z-index: 1500; /* Ensure above other elements */
+        background-color: #000;
+        cursor: pointer;
+    }
+
+    .hamburger span {
+        height: 4px;
+        width: 25px;
+        background: #fff;
+        margin-bottom: 4px;
+        border-radius: 5px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 60px; /* Adjust according to your header height */
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000;
+        z-index: 1000;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
     }
 
     nav ul.open {
@@ -265,25 +293,20 @@ footer {
         pointer-events: auto;
     }
 
-    nav ul.nav-links {
-        flex-direction: column;
-        align-items: center;
-        position: static;
-        opacity: 1;
-        pointer-events: auto;
-        background-color: #000;
-    }
-
     nav ul li {
         margin: 1rem 0;
     }
 
     nav ul li a {
-        padding: 0.5rem;
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2rem;
+        padding: 1rem;
+        display: block;
     }
 
     nav ul li.logo img {
-        width: 120px;
+        width: 120px; /* Adjust logo size */
     }
 
     /* Hero Section */
@@ -291,20 +314,38 @@ footer {
         font-size: 1.5rem;
         width: 90%;
         max-width: 300px;
+        margin: 0 auto; /* Center align */
     }
 
     /* Content Section */
-    .content-item {
-        flex: 1 1 100%;
-        max-width: none;
+    .content {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0; /* Adjust padding */
     }
 
-    .content-item h2, .content-item p {
-        width: 90%;
+    .content-item {
+        margin-bottom: 2rem;
+        width: 90%; /* Adjust width as needed */
         max-width: 100%;
     }
 
+    .content-item h2, .content-item p {
+        width: 100%;
+        max-width: 100%;
+        text-align: center; /* Center align text */
+        position: static; /* Remove absolute positioning */
+        transform: none; /* Remove transforms */
+    }
+
     .content-item p {
-        top: 60%;
+        margin-top: 0.5rem; /* Adjust margin */
+    }
+
+    /* Additional Image Section */
+    .additional-image img {
+        width: 90%; /* Adjust image width */
+        max-width: 100%;
+        height: auto;
     }
 }
