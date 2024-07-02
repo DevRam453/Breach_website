@@ -290,28 +290,39 @@ footer {
         display: block;
     }
 
-    .content-item h2,
-    .content-item p {
+    .text-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         background-color: rgba(0, 0, 0, 0.8);
-        padding: 1rem; /* Adjust padding as needed */
+        padding: 1rem;
         color: #fff;
         width: 80%;
         max-width: 300px;
         box-sizing: border-box;
-        margin: 0 auto; /* Center align the text */
-        position: absolute; /* Position text over the image */
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1; /* Ensure text is above the image */
+        text-align: center;
+        z-index: 1;
     }
 
-    .content-item h2 {
-        top: 20%; /* Adjust top positioning for h2 */
+    .text-overlay h2 {
+        margin-bottom: 0.5rem;
     }
 
-    .content-item p {
-        bottom: 20%; /* Adjust bottom positioning for p */
+    .text-overlay p {
+        margin-bottom: 0;
+    }
+
+    .content-item:nth-child(1) .text-overlay {
+        transform: translate(-50%, -60%); /* Adjust top positioning for the first content item */
+    }
+
+    .content-item:nth-child(2) .text-overlay {
+        transform: translate(-50%, -60%); /* Adjust top positioning for the second content item */
+    }
+
+    .content-item:nth-child(3) .text-overlay {
+        transform: translate(-50%, -60%); /* Adjust top positioning for the third content item */
     }
 
     .additional-image img {
