@@ -231,13 +231,15 @@ footer {
     z-index: 2;
     width: 100%;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0;
+    text-align: left;
 }
 
 .about-content p {
     font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 1rem;
+    text-align: left;
 }
 
 .about-content strong {
@@ -245,118 +247,64 @@ footer {
     display: block;
     margin-top: 2rem;
     line-height: 1.4;
+    text-align: left;
 }
 
-/* Media Queries */
 @media only screen and (max-width: 768px) {
+    /* Header */
+    nav ul {
+        top: 60px;
+    }
+
     .hamburger {
         display: flex;
     }
 
+    nav ul.open {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
     nav ul.nav-links {
-        display: none;
         flex-direction: column;
-        width: 100%;
-        background: #000;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 999;
-    }
-
-    nav ul.nav-links li {
-        text-align: center;
-        margin: 1rem 0;
-    }
-
-    nav ul.nav-links.active {
-        display: flex;
-    }
-
-    .hero h1 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 2.5rem;
-        background-color: black;
-        padding: 1rem;
-        width: 80%; /* Adjust width as needed */
-        max-width: 300px; /* Adjust max-width as needed */
-        text-align: center;
-    }
-
-    .content {
-        flex-direction: column;
-        padding: 1rem;
-    }
-
-    .content-item {
-        margin-bottom: 1rem;
-        position: relative;
-    }
-
-    .content-item img {
-        width: 100%;
-        height: auto;
-        display: block;
-        object-fit: cover; /* Ensure the whole image is used */
-    }
-
-    .text-overlay {
-        position: relative;
-        text-align: center;
-        overflow: hidden;
-        margin-bottom: 2rem;
-        flex: 1 1 300px;
-    }
-
-    .text-overlay h2 {
-        background-color: rgba(0, 0, 0, 0.8);
-        padding: 1rem; /* Adjust padding as needed */
-        color: #fff;
-        width: 80%;
-        max-width: 300px;
-        box-sizing: border-box;
-        margin: 0 auto; /* Center align the text */
-        position: absolute; /* Position text over the image */
-        top: 30%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1; /* Ensure text is above the image */
-    }
-
-    .text-overlay p {
-        background-color: rgba(0, 0, 0, 0.8);
-        padding: 1rem; /* Adjust padding as needed */
-        color: #fff;
-        width: 80%;
-        max-width: 300px;
-        box-sizing: border-box;
-        margin: 0 auto; /* Center align the text */
-        position: absolute; /* Position text over the image */
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1; /* Ensure text is above the image */
-    }
-
-    .content-item:nth-child(1) .text-overlay,
-    .content-item:nth-child(2) .text-overlay,
-    .content-item:nth-child(3) .text-overlay {
-        transform: translate(0%, 0%); /* Center transform */
-    }
-
-    .additional-image {
-        text-align: center;
-        padding: 2rem;
+        align-items: center;
+        position: static;
+        opacity: 1;
+        pointer-events: auto;
         background-color: #000;
     }
 
-    .additional-image img {
-        width: 100%;
-        height: auto;
-        object-fit: cover; /* Ensure the whole image is used */
+    nav ul li {
+        margin: 1rem 0;
+    }
+
+    nav ul li a {
+        padding: 0.5rem;
+    }
+
+    nav ul li.logo img {
+        width: 120px;
+    }
+
+    /* Hero Section */
+    .hero h1 {
+        font-size: 1.5rem;
+        width: 90%;
+        max-width: 300px;
+    }
+
+    /* Content Section */
+    .content-item {
+        flex: 1 1 100%;
+        max-width: none;
+    }
+
+    .content-item h2, .content-item p {
+        width: 90%;
+        max-width: 100%;
+    }
+
+    .content-item p {
+        top: 60%;
     }
 }
