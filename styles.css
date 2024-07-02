@@ -292,16 +292,17 @@ footer {
 
     .text-overlay {
         background-color: rgba(0, 0, 0, 0.8);
-        padding: 1rem;
+        padding: 1rem 2rem; /* Adjust padding as needed */
         color: #fff;
         width: 80%;
         max-width: 300px;
         box-sizing: border-box;
-        text-align: center;
-        z-index: 1;
-        overflow: hidden;
-        margin: 0 auto; /* Center the overlay horizontally */
-        margin-top: -60%; /* Adjust this margin for vertical positioning */
+        margin: 0 auto; /* Center align the text */
+        position: absolute; /* Position text over the image */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1; /* Adjust this margin for vertical positioning */
     }
 
     .text-overlay h2 {
