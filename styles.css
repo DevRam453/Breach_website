@@ -345,8 +345,6 @@ footer {
     .content-item:nth-child(1) .text-overlay,
     .content-item:nth-child(2) .text-overlay,
     .content-item:nth-child(3) .text-overlay {
-        top: 50%; /* Center vertically */
-        left: 50%; /* Center horizontally */
         transform: translate(-50%, -50%); /* Center transform */
     }
 
