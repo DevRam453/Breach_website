@@ -249,7 +249,6 @@ footer {
     line-height: 1.4;
     text-align: left;
 }
-
 /* Media Query for Mobile Devices */
 @media only screen and (max-width: 768px) {
     .hamburger {
@@ -312,4 +311,61 @@ footer {
         max-width: 100%;
         height: auto;
     }
+}
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav ul.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul.nav-links li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+/* Make image fit the screen and fixed */
+.additional-image {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    background: url('Images/logo/breach cover logo.jpg') no-repeat center center/cover;
+}
+
+.additional-image img {
+    display: none; /* Hide the img tag */
+}
+
+.about-content {
+    background: rgba(255, 255, 255, 0.8); /* White background with some transparency */
+    padding: 2rem;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #000;
+    color: #fff;
 }
