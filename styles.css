@@ -325,24 +325,15 @@ footer {
         transform: translate(-50%, -60%); /* Adjust top positioning for the third content item */
     }
 
+    .additional-image {
+        text-align: center;
+        padding: 2rem;
+        background-color: #000000;
+    }
+
     .additional-image img {
         width: 100%;
-    }
-
-    .about {
-        padding: 80px 20px;
-    }
-
-    .about h2 {
-        z-index: 2;
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    .about-content {
-        width: 100%;
-        max-width: 100%;
-        padding: 0 20px;
+        height: auto;
     }
 }
 
