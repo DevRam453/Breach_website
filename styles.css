@@ -295,6 +295,7 @@ footer {
         width: 100%;
         height: auto;
         display: block;
+        object-fit: cover; /* Ensure the whole image is used */
     }
 
     .text-overlay {
@@ -338,5 +339,6 @@ footer {
     .additional-image img {
         width: 100%;
         height: auto;
+        object-fit: cover; /* Ensure the whole image is used */
     }
 }
