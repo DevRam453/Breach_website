@@ -291,10 +291,6 @@ footer {
     }
 
     .text-overlay {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         background-color: rgba(0, 0, 0, 0.8);
         padding: 1rem;
         color: #fff;
@@ -304,6 +300,8 @@ footer {
         text-align: center;
         z-index: 1;
         overflow: hidden;
+        margin: 0 auto; /* Center the overlay horizontally */
+        margin-top: -60%; /* Adjust this margin for vertical positioning */
     }
 
     .text-overlay h2 {
@@ -314,23 +312,16 @@ footer {
         margin-bottom: 0;
     }
 
-    .text-overlay h2,
-    .text-overlay p {
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 1rem; /* Adjust padding as needed */
-    margin: 0;
-    }
-
     .content-item:nth-child(1) .text-overlay {
-        transform: translate(-50%, -60%); /* Adjust top positioning for the first content item */
+        margin-top: -60%; /* Adjust top positioning for the first content item */
     }
 
     .content-item:nth-child(2) .text-overlay {
-        transform: translate(-50%, -60%); /* Adjust top positioning for the second content item */
+        margin-top: -60%; /* Adjust top positioning for the second content item */
     }
 
     .content-item:nth-child(3) .text-overlay {
-        transform: translate(-50%, -60%); /* Adjust top positioning for the third content item */
+        margin-top: -60%; /* Adjust top positioning for the third content item */
     }
 
     .additional-image {
