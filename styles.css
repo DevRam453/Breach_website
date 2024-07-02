@@ -310,19 +310,19 @@ footer {
     }
 
     .text-overlay p {
-        margin-bottom: 0;
+        margin-bottom: 0.5;
     }
 
     .content-item:nth-child(1) .text-overlay {
-        margin-top: -60%; /* Adjust top positioning for the first content item */
+        margin-top: -40%; /* Adjust top positioning for the first content item */
     }
 
     .content-item:nth-child(2) .text-overlay {
-        margin-top: -60%; /* Adjust top positioning for the second content item */
+        margin-top: -40%; /* Adjust top positioning for the second content item */
     }
 
     .content-item:nth-child(3) .text-overlay {
-        margin-top: -60%; /* Adjust top positioning for the third content item */
+        margin-top: -40%; /* Adjust top positioning for the third content item */
     }
 
     .additional-image {
