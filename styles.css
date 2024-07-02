@@ -299,4 +299,26 @@ footer {
         max-width: 100%;
         padding: 0 20px;
     }
+
+    .about-content {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .about-content p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+    }
+    
+    .about-content strong {
+        font-size: 1.4rem;
+        display: block;
+        margin-top: 2rem;
+        line-height: 1.4;
+    }
 }
+
