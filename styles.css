@@ -321,7 +321,7 @@ footer {
         box-sizing: border-box;
         margin: 0 auto; /* Center align the text */
         position: absolute; /* Position text over the image */
-        top: 60%;
+        top: 30%;
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 1; /* Ensure text is above the image */
