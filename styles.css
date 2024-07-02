@@ -252,16 +252,9 @@ footer {
 
 /* Media Query for Mobile Devices */
 @media only screen and (max-width: 768px) {
-    /* Header */
+    /* Hamburger Menu */
     .hamburger {
         display: flex;
-        position: fixed;
-        top: 0;
-        right: 0;
-        padding: 1rem;
-        z-index: 1500; /* Ensure above other elements */
-        background-color: #000;
-        cursor: pointer;
     }
 
     .hamburger span {
@@ -272,7 +265,7 @@ footer {
         border-radius: 5px;
     }
 
-    nav ul {
+    nav {
         display: none;
         flex-direction: column;
         align-items: center;
@@ -288,9 +281,18 @@ footer {
         transition: opacity 0.3s ease;
     }
 
-    nav ul.open {
+    nav.open {
+        display: flex;
         opacity: 1;
         pointer-events: auto;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #000;
+        width: 100%;
     }
 
     nav ul li {
@@ -330,16 +332,14 @@ footer {
         max-width: 100%;
     }
 
-    .content-item h2, .content-item p {
-        width: 100%;
+    .content-item .text-overlay {
+        position: static;
+        transform: none;
+        width: 90%; /* Adjust width */
         max-width: 100%;
-        text-align: center; /* Center align text */
-        position: static; /* Remove absolute positioning */
-        transform: none; /* Remove transforms */
-    }
-
-    .content-item p {
-        margin-top: 0.5rem; /* Adjust margin */
+        text-align: center;
+        padding: 1rem;
+        margin: 0 auto; /* Center align */
     }
 
     /* Additional Image Section */
