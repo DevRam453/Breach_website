@@ -12,13 +12,14 @@ body {
     margin: 0; /* Remove default body margin */
 }
 
+/* Header */
 header {
     position: fixed;
-    background-color: #000000;
+    background-color: #000;
     width: 100%;
     padding: 1rem;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav {
@@ -45,7 +46,7 @@ nav ul {
     list-style-type: none;
     display: flex;
     align-items: center;
-    background-color: #000000;
+    background-color: #000;
 }
 
 nav ul.nav-links {
@@ -80,6 +81,7 @@ nav ul li.logo img {
     height: auto;
 }
 
+/* Hero Section */
 .hero {
     padding-top: 120px;
     position: relative;
@@ -103,11 +105,12 @@ nav ul li.logo img {
     padding: 1rem;
 }
 
+/* Content Section */
 .content {
     display: flex;
     justify-content: space-around;
     padding: 2rem;
-    background-color: #000000;
+    background-color: #000;
 }
 
 .content-item {
@@ -127,7 +130,7 @@ nav ul li.logo img {
 .content-item h2,
 .content-item p {
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 50rem; /* Adjust padding as needed */
+    padding: 1rem; /* Adjust padding as needed */
     color: #fff;
     width: 80%;
     max-width: 300px;
@@ -148,17 +151,19 @@ nav ul li.logo img {
     bottom: 40%;
 }
 
+/* Additional Image Section */
 .additional-image {
     text-align: center;
-    padding: 2rem;
-    background-color: #000000;
+    padding: 1rem;
+    background-color: #000;
 }
 
 .additional-image img {
-    width: 100%;
+    width: 50%;
     height: auto;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 1rem;
@@ -183,6 +188,7 @@ footer {
     opacity: 0.8;
 }
 
+/* About Section */
 .about {
     position: relative;
     background-color: #222;
@@ -235,6 +241,7 @@ footer {
     line-height: 1.4;
 }
 
+/* Media Queries */
 @media only screen and (max-width: 768px) {
     .hamburger {
         display: flex;
@@ -313,22 +320,16 @@ footer {
         margin-bottom: 0;
     }
 
-    .content-item:nth-child(1) .text-overlay {
-        margin-top: -60%; /* Adjust top positioning for the first content item */
-    }
-
-    .content-item:nth-child(2) .text-overlay {
-        margin-top: -60%; /* Adjust top positioning for the second content item */
-    }
-
+    .content-item:nth-child(1) .text-overlay,
+    .content-item:nth-child(2) .text-overlay,
     .content-item:nth-child(3) .text-overlay {
-        margin-top: -60%; /* Adjust top positioning for the third content item */
+        margin-top: -60%; /* Adjust top positioning for the content items */
     }
 
     .additional-image {
         text-align: center;
         padding: 2rem;
-        background-color: #000000;
+        background-color: #000;
     }
 
     .additional-image img {
@@ -336,4 +337,3 @@ footer {
         height: auto;
     }
 }
-
