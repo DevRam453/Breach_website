@@ -304,68 +304,61 @@ footer {
         padding: 1rem;
         margin: 0 auto; /* Center align */
     }
-
-    /* Additional Image Section */
-    .additional-image img {
-        width: 90%; /* Adjust image width */
-        max-width: 100%;
-        height: auto;
+    /* About Section */
+    .about {
+        position: relative;
+        background-color: #222;
+        color: #fff;
+        padding: 120px;
+        text-align: left;
+        background-image: url('Images/breach3.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
-}
 
-/* General Styles */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
+    .about::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
 
-header {
-    background-color: #000;
-    color: #fff;
-    padding: 1rem;
-}
+    .about h2 {
+        position: relative;
+        z-index: 2;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
 
-nav ul.nav-links {
-    list-style: none;
-    padding: 0;
-}
+    .about-content {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        max-width: 800px;
+        margin: 0;
+        text-align: left;
+    }
 
-nav ul.nav-links li {
-    display: inline;
-    margin: 0 1rem;
-}
+    .about-content p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
 
-h2 {
-    text-align: center;
-}
+    .about-content strong {
+        font-size: 1.4rem;
+        display: block;
+        margin-top: 2rem;
+        line-height: 1.4;
+        text-align: left;
 
-p {
-    text-align: center;
-}
-
-/* Make image fit the screen and fixed */
-.additional-image {
-    position: relative;
-    overflow: hidden;
-    height: 100vh;
-    width: 100%;
-    background: url('Images/logo/breach cover logo.jpg') no-repeat center center/cover;
-}
-
-.additional-image img {
-    display: none; /* Hide the img tag */
-}
-
-.about-content {
-    background: rgba(255, 255, 255, 0.8); /* White background with some transparency */
-    padding: 2rem;
-    max-width: 90%;
-    margin: 0 auto;
-}
-
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #000;
-    color: #fff;
+    
+    }
 }
