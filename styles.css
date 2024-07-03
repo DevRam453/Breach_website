@@ -306,9 +306,29 @@ footer {
     }
     /* About Section */
     .about {
-        padding: 60px 20px;
+        position: relative;
+        background-color: #222;
+        color: #fff;
+        padding: 120px;
+        text-align: left;
+        background-image: url('Images/breach3.jpg');
+        width: 100%;
+        height: auto;
+        display: block;
+        background-repeat: repeat;
     }
-
+    
+    .about::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+    
     .about h2 {
         position: relative;
         z-index: 2;
@@ -316,31 +336,28 @@ footer {
         margin-bottom: 1rem;
         text-align: center;
     }
-
+    
     .about-content {
         position: relative;
         z-index: 2;
-        font-size: 1rem;
-        left: 0.5px;
-        right: 0.5px;
+        width: 100%;
+        max-width: 800px;
+        margin: 0;
         text-align: left;
     }
-
+    
     .about-content p {
-        position: relative;
-        z-index: 2;
-        font-size: 1rem;
-        left: 0.5px;
-        right: 0.5px;
+        font-size: 1.2rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
         text-align: left;
     }
-
+    
     .about-content strong {
-        position: relative;
-        z-index: 2;
-        font-size: 1rem;
-        left: 0.5px;
-        right: 0.5px;
+        font-size: 1.4rem;
+        display: block;
+        margin-top: 2rem;
+        line-height: 1.4;
         text-align: left;
     }
 }
