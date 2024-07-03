@@ -286,7 +286,7 @@ footer {
     .content {
         flex-direction: column;
         align-items: center;
-        padding: 2rem 0; /* Adjust padding */
+        padding: 1rem 0; /* Adjust padding */
     }
 
     .content-item {
